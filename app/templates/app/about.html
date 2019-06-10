@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О проекте</title>
+</head>
+<body>
+{% extends "app/base.html" %}
+{% block title %}<title> О проекте </title>{% endblock %}
+
+{% block navigation_bar_about %}
+<li class="active"><a href="{% url 'about' %}">О проекте</a></li>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+      <div class="col s12">
+        <h1 class="col s12">О компании</h1>
+
+        <div class="col s12 m8">
+            <div>Производим компьютеры с 1976 года
+            </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
